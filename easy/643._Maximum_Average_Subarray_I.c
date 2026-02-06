@@ -1,4 +1,9 @@
-#include <stdio.h>
+/* You are given an integer array nums consisting of n elements, and an integer k.
+
+Find a contiguous subarray whose length is equal to k that has the maximum average value
+and return this value. Any answer with a calculation error less than 10-5 will be accepted. */
+
+#include "../leetcode.h"
 
 double findMaxAverage(int* nums, int size, int k)
 {
@@ -32,9 +37,8 @@ double findMaxAverage(int* nums, int size, int k)
 int main(void)
 {
     int arr[] = {3,3,4,3,0};
-    // int arr[] = {5};
 	int n = sizeof(arr) / sizeof(arr[0]);;
     double res = findMaxAverage(arr, n, 3);
-    printf("res = %f\n", res);
+    printf("Maximum average is %f\n", res);
     return (0);
 }
